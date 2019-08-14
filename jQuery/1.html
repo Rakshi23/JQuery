@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#demo1").click(function(){
+                    $("#demo").hide();
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+
+        <div id="demo">
+            <ul>
+                <li>hi</li>
+                <li>hello</li>
+            </ul>
+        </div>
+        <p>If you click on me, I will disappear.</p>
+        <p><button id="demo1">me away!</button></p>
+        <p><button>me too!</button></p>
+    </body>
+</html>

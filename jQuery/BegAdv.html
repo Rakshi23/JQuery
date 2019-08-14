@@ -1,0 +1,90 @@
+--Beginner and Advanced List
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Executing a Function on Click Event in jQuery</title>
+        <h1 align=center>Quinnox Training</h1>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <style type="text/css">
+            p{
+                padding: 20px;
+                font: 20px sans-serif;
+                background: khaki;
+            }
+
+           
+        </style>
+
+        <script type="text/JavaScript">
+
+        $(document).ready(function(){
+                $(".mybegin").hide();
+                $(".myadv").hide();
+        });  
+        $(document).ready(function(){
+            $("#Beginner").click(function(e){
+                $(".mybegin").css("backgroundColor","Gold");
+               // $(".mybegin").show();
+                $(".mybegin").fadeIn(1000);
+                $(".myadv").hide();
+                
+            });
+        });
+
+        $(document).ready(function(){
+            $("#Advanced").click(function(e){
+                $(".myadv").css("backgroundColor","Red");
+                //$(".myadv").show();
+                $(".myadv").fadeIn(1000);
+                $(".mybegin").hide();
+                
+            });
+        });
+        </script>
+    </head>
+
+    <body>
+
+        <center>
+        <table border="3px solid black" bgcolor="Silver" width="500px" heigth="1500px" >
+        <tr>
+            <th>BEGINEER COURCES</th>
+            <th>ADVANCED COURCES</th>
+        </tr>
+
+        <tr>
+            <td>
+                <ul class="mybegin">
+                    <li>Core Java</li>
+                    <li>JavaScript</li>
+                </ul>
+            </td>
+        
+            <td>
+                <ul class="myadv">
+                    <li>Servlets</li>
+                    <li>JSP</li>
+                    <li>Hibernate</li>
+                </ul>
+            </td>
+        </tr>
+       
+        <tr>
+            <td>
+                    <button id = "Beginner">Beginner</button> 
+            </td>
+        
+        
+            <td>
+                    <button id = "Advanced">Advanced</button>
+            </td>
+                
+        </tr>
+         </table>       
+        </center>
+      
+    
+
+    </body>
+</html>
